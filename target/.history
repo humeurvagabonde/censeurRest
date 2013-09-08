@@ -1,0 +1,16 @@
+exit
+update
+eclipse
+run
+run 9001
+run
+run 9001
+debug
+play debug
+help play
+debug 9000
+debug
+run
+run 9001
+help play
+start 9001
