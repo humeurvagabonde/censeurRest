@@ -3,3 +3,9 @@ dist
 .tmp
 .sass-cache
 app/components
+.target
+.settings
+project/project
+project/target
+.classpath
+.project

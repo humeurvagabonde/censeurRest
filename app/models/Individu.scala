@@ -44,5 +44,12 @@ object Individus extends Table[Individu]("INDIVIDU_ULR") {
   def nomPatronymique = column[String]("NOM_PATRONYMIQUE")
   def prenom = column[String]("PRENOM")
   
-  def * = id.? ~ cCivilite ~ cDeptNaissance.? ~ cPaysNaissance.? ~ cPaysNationalite.? ~ dCreation ~ dModification.? ~ dNaissance ~ dDeces.? ~ indCSituationFamille.? ~ indCleInsee.? ~ indNoInsee.? ~ noIndividu.? ~ nomAffichage ~ nomPatronymique ~ prenom <> (Individu, Individu.unapply _)
+  //def * = (id.?, cCivilite, cDeptNaissance.?, cPaysNaissance.?, cPaysNationalite.?, dCreation, dModification.?, dNaissance, dDeces.?, indCSituationFamille.?, indCleInsee.?, indNoInsee.?, noIndividu.?, nomAffichage, nomPatronymique, prenom) <> (Individu.tupled, Individu.unapply _)
+  def * = id.? ~ cCivilite ~ cDeptNaissance.? ~ cPaysNaissance.? ~ cPaysNationalite.? ~ dCreation ~ dModification.? ~ dNaissance ~ dDeces.? ~ indCSituationFamille.? ~ indCleInsee.? ~ indNoInsee.? ~ noIndividu.? ~ nomAffichage ~ nomPatronymique ~ prenom <> (Individu.apply _, Individu.unapply _)
+  
+  def displayAll(implicit session: Session) = {
+	  Query(Individus) foreach { case (id) =>
+	    println(id)
+	  }
+  } 
 }

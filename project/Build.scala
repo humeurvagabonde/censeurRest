@@ -5,7 +5,7 @@ import com.typesafe.sbteclipse.plugin.EclipsePlugin.EclipseKeys
 
 object ApplicationBuild extends Build {
 
-  val appName         = "bristolRest"
+  val appName         = "censeurRest"
   val appVersion      = "1.0-SNAPSHOT"
 
   val appDependencies = Seq(
@@ -21,7 +21,7 @@ object ApplicationBuild extends Build {
 
   val main = play.Project(appName, appVersion, appDependencies).settings(
 	  // Add your own project settings here
-      testOptions in Test := Nil,
+    testOptions in Test := Nil,
 	  EclipseKeys.withSource := true
   )
 }

@@ -38,10 +38,10 @@ Seq[Any](format.raw/*1.19*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun Jul 07 15:40:02 CEST 2013
-                    SOURCE: H:/Bureautique/dev/dev/angularjs/bristolRest/app/views/index.scala.html
-                    HASH: 37eefd9454dbf77b8088e94c3ec99cc2c62f71c9
-                    MATRIX: 505->1|599->18|636->21|671->48|710->50|755->61|769->67|807->84|844->91
+                    DATE: Thu Sep 12 21:36:52 CEST 2013
+                    SOURCE: H:/Bureautique/dev/dev/gitRepositories/censeurRest/app/views/index.scala.html
+                    HASH: 8d363f7cda131e2905a45582c92a9be3dc6edf2e
+                    MATRIX: 505->1|599->18|638->23|673->50|712->52|759->65|773->71|811->88|850->97
                     LINES: 19->1|22->1|24->3|24->3|24->3|26->5|26->5|26->5|28->7
                     -- GENERATED --
                 */

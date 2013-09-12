@@ -14,3 +14,17 @@ run
 run 9001
 help play
 start 9001
+eclipse
+reload
+eclipse
+reload
+eclips
+eclipse
+reload
+run 9001
+update
+help play
+clean
+reload
+update
+run 9001

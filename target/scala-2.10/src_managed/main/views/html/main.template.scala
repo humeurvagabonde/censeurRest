@@ -46,10 +46,10 @@ Seq[Any](format.raw/*1.32*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun Jul 07 15:40:02 CEST 2013
-                    SOURCE: H:/Bureautique/dev/dev/angularjs/bristolRest/app/views/main.scala.html
-                    HASH: 27f8edb770da492742673119002f624cb384b42b
-                    MATRIX: 509->1|616->31|704->84|730->89|827->151|841->157|896->191|992->252|1006->258|1059->290|1120->315|1135->321|1202->366|1305->433|1334->440
+                    DATE: Thu Sep 12 21:36:52 CEST 2013
+                    SOURCE: H:/Bureautique/dev/dev/gitRepositories/censeurRest/app/views/main.scala.html
+                    HASH: 5ffd16d1be911421a2b98ca612b58503fe812abd
+                    MATRIX: 509->1|616->31|710->90|736->95|834->158|848->164|903->198|1000->260|1014->266|1067->298|1129->324|1144->330|1211->375|1317->445|1346->452
                     LINES: 19->1|22->1|28->7|28->7|29->8|29->8|29->8|30->9|30->9|30->9|31->10|31->10|31->10|34->13|34->13
                     -- GENERATED --
                 */

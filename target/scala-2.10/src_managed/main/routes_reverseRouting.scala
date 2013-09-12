@@ -1,12 +1,11 @@
-// @SOURCE:H:/Bureautique/dev/dev/angularjs/bristolRest/conf/routes
-// @HASH:f52e76ba15b4aee8ac225882a56b8d85b131c438
-// @DATE:Tue Jul 09 22:16:01 CEST 2013
+// @SOURCE:H:/Bureautique/dev/dev/gitRepositories/censeurRest/conf/routes
+// @HASH:fed36c7f8fd44dc2297eaff4a9f458891c9f8a38
+// @DATE:Thu Sep 12 21:36:49 CEST 2013
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
 import play.core.Router._
 import play.core.j._
-import java.net.URLEncoder
 
 import play.api.mvc._
 
