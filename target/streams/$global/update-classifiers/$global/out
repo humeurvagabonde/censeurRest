@@ -1,0 +1,13 @@
+[0m[[33mwarn[0m] [0m	[NOT FOUND  ] com.oracle#ojdbc6;11.2.0.3!ojdbc6.jar(doc) (1273ms)[0m
+[0m[[33mwarn[0m] [0m==== Nexus Cocktail: tried[0m
+[0m[[33mwarn[0m] [0m  http://nexus.asso-cocktail.org/content/groups/public/com/oracle/ojdbc6/11.2.0.3/ojdbc6-11.2.0.3-javadoc.jar[0m
+[0m[[33mwarn[0m] [0m	[NOT FOUND  ] com.oracle#ojdbc6;11.2.0.3!ojdbc6.jar(src) (1274ms)[0m
+[0m[[33mwarn[0m] [0m==== Nexus Cocktail: tried[0m
+[0m[[33mwarn[0m] [0m  http://nexus.asso-cocktail.org/content/groups/public/com/oracle/ojdbc6/11.2.0.3/ojdbc6-11.2.0.3-sources.jar[0m
+[0m[[33mwarn[0m] [0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
+[0m[[33mwarn[0m] [0m	::              FAILED DOWNLOADS            ::[0m
+[0m[[33mwarn[0m] [0m	:: ^ see resolution messages for details  ^ ::[0m
+[0m[[33mwarn[0m] [0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
+[0m[[33mwarn[0m] [0m	:: com.oracle#ojdbc6;11.2.0.3!ojdbc6.jar(doc)[0m
+[0m[[33mwarn[0m] [0m	:: com.oracle#ojdbc6;11.2.0.3!ojdbc6.jar(src)[0m
+[0m[[33mwarn[0m] [0m	::::::::::::::::::::::::::::::::::::::::::::::[0m

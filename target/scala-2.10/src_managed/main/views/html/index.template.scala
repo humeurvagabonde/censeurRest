@@ -13,10 +13,10 @@ import play.api.mvc._
 import play.api.data._
 import views.html._
 /**/
-object index extends BaseScalaTemplate[play.api.templates.Html,Format[play.api.templates.Html]](play.api.templates.HtmlFormat) with play.api.templates.Template1[String,play.api.templates.Html] {
+object index extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template1[String,play.api.templates.HtmlFormat.Appendable] {
 
     /**/
-    def apply/*1.2*/(message: String):play.api.templates.Html = {
+    def apply/*1.2*/(message: String):play.api.templates.HtmlFormat.Appendable = {
         _display_ {
 
 Seq[Any](format.raw/*1.19*/("""
@@ -29,19 +29,19 @@ Seq[Any](format.raw/*1.19*/("""
 """))}
     }
     
-    def render(message:String): play.api.templates.Html = apply(message)
+    def render(message:String): play.api.templates.HtmlFormat.Appendable = apply(message)
     
-    def f:((String) => play.api.templates.Html) = (message) => apply(message)
+    def f:((String) => play.api.templates.HtmlFormat.Appendable) = (message) => apply(message)
     
     def ref: this.type = this
 
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Sep 12 21:36:52 CEST 2013
-                    SOURCE: H:/Bureautique/dev/dev/gitRepositories/censeurRest/app/views/index.scala.html
-                    HASH: 8d363f7cda131e2905a45582c92a9be3dc6edf2e
-                    MATRIX: 505->1|599->18|638->23|673->50|712->52|759->65|773->71|811->88|850->97
+                    DATE: Sat Sep 14 11:47:08 CEST 2013
+                    SOURCE: /home/kahlua/dev/gitPoc/censeurRest/app/views/index.scala.html
+                    HASH: 4987e21beb4a4e8628553df36d0b1bd16cd6760a
+                    MATRIX: 556->1|667->18|704->21|739->48|778->50|823->61|837->67|875->84|912->91
                     LINES: 19->1|22->1|24->3|24->3|24->3|26->5|26->5|26->5|28->7
                     -- GENERATED --
                 */

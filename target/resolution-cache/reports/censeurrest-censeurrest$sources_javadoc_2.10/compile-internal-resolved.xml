@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="censeurrest"
+		module="censeurrest$sources_javadoc_2.10"
+		revision="1.0-SNAPSHOT"
+		conf="compile-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom"
+		date="20130913114020"/>
+	<dependencies>
+		<module organisation="com.typesafe.slick" name="slick-extensions_2.10">
+			<revision name="1.0.0" status="release" pubdate="20130507152216" resolver="Typesafe Releases Repository" artresolver="Typesafe Releases Repository" homepage="http://slick.typesafe.com" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="8">
+				<license name="Typesafe Subscription Agreement" url="http://typesafe.com/public/legal/TypesafeSubscriptionAgreement-v1.pdf"/>
+				<metadata-artifact status="no" details="" size="2740" time="0" location="/home/kahlua/dev/play-2.1/framework/../repository/cache/com.typesafe.slick/slick-extensions_2.10/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/slick/slick-extensions_2.10/1.0.0/slick-extensions_2.10-1.0.0.pom"/>
+				<caller organisation="censeurrest" name="censeurrest$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="slick-extensions_2.10" type="jar" ext="jar" status="no" details="" size="88866" time="0" location="/home/kahlua/dev/play-2.1/framework/../repository/cache/com.typesafe.slick/slick-extensions_2.10/jars/slick-extensions_2.10-1.0.0.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/slick/slick-extensions_2.10/1.0.0/slick-extensions_2.10-1.0.0.jar"/>
+					</artifact>
+					<artifact name="slick-extensions_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="460902" time="0" location="/home/kahlua/dev/play-2.1/framework/../repository/cache/com.typesafe.slick/slick-extensions_2.10/docs/slick-extensions_2.10-1.0.0-javadoc.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/slick/slick-extensions_2.10/1.0.0/slick-extensions_2.10-1.0.0-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.slick" name="slick_2.10">
+			<revision name="1.0.1" status="release" pubdate="20130604195840" resolver="public" artresolver="public" homepage="http://slick.typesafe.com" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="7">
+				<license name="Two-clause BSD-style license" url="http://github.com/slick/slick/blob/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="2820" time="0" location="/home/kahlua/dev/play-2.1/framework/../repository/cache/com.typesafe.slick/slick_2.10/ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/slick/slick_2.10/1.0.1/slick_2.10-1.0.1.pom"/>
+				<caller organisation="censeurrest" name="censeurrest$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="slick_2.10" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="153408" time="0" location="/home/kahlua/dev/play-2.1/framework/../repository/cache/com.typesafe.slick/slick_2.10/srcs/slick_2.10-1.0.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/slick/slick_2.10/1.0.1/slick_2.10-1.0.1-sources.jar"/>
+					</artifact>
+					<artifact name="slick_2.10" type="jar" ext="jar" status="no" details="" size="2753282" time="0" location="/home/kahlua/dev/play-2.1/framework/../repository/cache/com.typesafe.slick/slick_2.10/jars/slick_2.10-1.0.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/slick/slick_2.10/1.0.1/slick_2.10-1.0.1.jar"/>
+					</artifact>
+					<artifact name="slick_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="2885857" time="0" location="/home/kahlua/dev/play-2.1/framework/../repository/cache/com.typesafe.slick/slick_2.10/docs/slick_2.10-1.0.1-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/slick/slick_2.10/1.0.1/slick_2.10-1.0.1-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="play" name="play-jdbc_2.10">
+			<revision name="2.1.3" status="release" pubdate="20130806152621" resolver="local" artresolver="local" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="5">
+				<metadata-artifact status="no" details="" size="2337" time="0" location="/home/kahlua/dev/play-2.1/framework/../repository/cache/play/play-jdbc_2.10/ivy-2.1.3.xml" searched="false" origin-is-local="true" origin-location="/home/kahlua/dev/play-2.1/repository/local/play/play-jdbc_2.10/2.1.3/ivys/ivy.xml"/>
+				<caller organisation="censeurrest" name="censeurrest$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="2.1.3" rev-constraint-default="2.1.3" rev-constraint-dynamic="2.1.3" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-jdbc_2.10" type="jar" ext="jar" status="no" details="" size="209818" time="0" location="/home/kahlua/dev/play-2.1/repository/local/play/play-jdbc_2.10/2.1.3/jars/play-jdbc_2.10.jar">
+						<origin-location is-local="true" location="/home/kahlua/dev/play-2.1/repository/local/play/play-jdbc_2.10/2.1.3/jars/play-jdbc_2.10.jar"/>
+					</artifact>
+					<artifact name="play-jdbc_2.10" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="11788" time="0" location="/home/kahlua/dev/play-2.1/repository/local/play/play-jdbc_2.10/2.1.3/srcs/play-jdbc_2.10-sources.jar">
+						<origin-location is-local="true" location="/home/kahlua/dev/play-2.1/repository/local/play/play-jdbc_2.10/2.1.3/srcs/play-jdbc_2.10-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="play" name="play-java_2.10">
+			<revision name="2.1.3" status="release" pubdate="20130806152614" resolver="local" artresolver="local" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="6">
+				<metadata-artifact status="no" details="" size="4112" time="0" location="/home/kahlua/dev/play-2.1/framework/../repository/cache/play/play-java_2.10/ivy-2.1.3.xml" searched="false" origin-is-local="true" origin-location="/home/kahlua/dev/play-2.1/repository/local/play/play-java_2.10/2.1.3/ivys/ivy.xml"/>
+				<caller organisation="censeurrest" name="censeurrest$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="2.1.3" rev-constraint-default="2.1.3" rev-constraint-dynamic="2.1.3" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-java_2.10" type="jar" ext="jar" status="no" details="" size="95340" time="0" location="/home/kahlua/dev/play-2.1/repository/local/play/play-java_2.10/2.1.3/jars/play-java_2.10.jar">
+						<origin-location is-local="true" location="/home/kahlua/dev/play-2.1/repository/local/play/play-java_2.10/2.1.3/jars/play-java_2.10.jar"/>
+					</artifact>
+					<artifact name="play-java_2.10" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="40917" time="0" location="/home/kahlua/dev/play-2.1/repository/local/play/play-java_2.10/2.1.3/srcs/play-java_2.10-sources.jar">
+						<origin-location is-local="true" location="/home/kahlua/dev/play-2.1/repository/local/play/play-java_2.10/2.1.3/srcs/play-java_2.10-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="play" name="play_2.10">
+			<revision name="2.1.3" status="release" pubdate="20130806152510" resolver="local" artresolver="local" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="0">
+				<metadata-artifact status="no" details="" size="4918" time="0" location="/home/kahlua/dev/play-2.1/framework/../repository/cache/play/play_2.10/ivy-2.1.3.xml" searched="false" origin-is-local="true" origin-location="/home/kahlua/dev/play-2.1/repository/local/play/play_2.10/2.1.3/ivys/ivy.xml"/>
+				<caller organisation="censeurrest" name="censeurrest$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="2.1.3" rev-constraint-default="2.1.3" rev-constraint-dynamic="2.1.3" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play_2.10" type="jar" ext="jar" status="no" details="" size="4700419" time="0" location="/home/kahlua/dev/play-2.1/repository/local/play/play_2.10/2.1.3/jars/play_2.10.jar">
+						<origin-location is-local="true" location="/home/kahlua/dev/play-2.1/repository/local/play/play_2.10/2.1.3/jars/play_2.10.jar"/>
+					</artifact>
+					<artifact name="play_2.10" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="376718" time="0" location="/home/kahlua/dev/play-2.1/repository/local/play/play_2.10/2.1.3/srcs/play_2.10-sources.jar">
+						<origin-location is-local="true" location="/home/kahlua/dev/play-2.1/repository/local/play/play_2.10/2.1.3/srcs/play_2.10-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="play" name="play-iteratees_2.10">
+			<revision name="2.1.3" status="release" pubdate="20130806152329" resolver="local" artresolver="local" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="4">
+				<metadata-artifact status="no" details="" size="2078" time="0" location="/home/kahlua/dev/play-2.1/framework/../repository/cache/play/play-iteratees_2.10/ivy-2.1.3.xml" searched="false" origin-is-local="true" origin-location="/home/kahlua/dev/play-2.1/repository/local/play/play-iteratees_2.10/2.1.3/ivys/ivy.xml"/>
+				<caller organisation="censeurrest" name="censeurrest$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="2.1.3" rev-constraint-default="2.1.3" rev-constraint-dynamic="2.1.3" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-iteratees_2.10" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="23720" time="0" location="/home/kahlua/dev/play-2.1/repository/local/play/play-iteratees_2.10/2.1.3/srcs/play-iteratees_2.10-sources.jar">
+						<origin-location is-local="true" location="/home/kahlua/dev/play-2.1/repository/local/play/play-iteratees_2.10/2.1.3/srcs/play-iteratees_2.10-sources.jar"/>
+					</artifact>
+					<artifact name="play-iteratees_2.10" type="jar" ext="jar" status="no" details="" size="642773" time="0" location="/home/kahlua/dev/play-2.1/repository/local/play/play-iteratees_2.10/2.1.3/jars/play-iteratees_2.10.jar">
+						<origin-location is-local="true" location="/home/kahlua/dev/play-2.1/repository/local/play/play-iteratees_2.10/2.1.3/jars/play-iteratees_2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="play" name="templates_2.10">
+			<revision name="2.1.3" status="release" pubdate="20130806152329" resolver="local" artresolver="local" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="3">
+				<metadata-artifact status="no" details="" size="1851" time="0" location="/home/kahlua/dev/play-2.1/framework/../repository/cache/play/templates_2.10/ivy-2.1.3.xml" searched="false" origin-is-local="true" origin-location="/home/kahlua/dev/play-2.1/repository/local/play/templates_2.10/2.1.3/ivys/ivy.xml"/>
+				<caller organisation="censeurrest" name="censeurrest$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="2.1.3" rev-constraint-default="2.1.3" rev-constraint-dynamic="2.1.3" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="templates_2.10" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1926" time="0" location="/home/kahlua/dev/play-2.1/repository/local/play/templates_2.10/2.1.3/srcs/templates_2.10-sources.jar">
+						<origin-location is-local="true" location="/home/kahlua/dev/play-2.1/repository/local/play/templates_2.10/2.1.3/srcs/templates_2.10-sources.jar"/>
+					</artifact>
+					<artifact name="templates_2.10" type="jar" ext="jar" status="no" details="" size="38326" time="0" location="/home/kahlua/dev/play-2.1/repository/local/play/templates_2.10/2.1.3/jars/templates_2.10.jar">
+						<origin-location is-local="true" location="/home/kahlua/dev/play-2.1/repository/local/play/templates_2.10/2.1.3/jars/templates_2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="play" name="play-exceptions">
+			<revision name="2.1.3" status="release" pubdate="20130806152329" resolver="local" artresolver="local" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="2">
+				<metadata-artifact status="no" details="" size="1227" time="0" location="/home/kahlua/dev/play-2.1/framework/../repository/cache/play/play-exceptions/ivy-2.1.3.xml" searched="false" origin-is-local="true" origin-location="/home/kahlua/dev/play-2.1/repository/local/play/play-exceptions/2.1.3/ivys/ivy.xml"/>
+				<caller organisation="censeurrest" name="censeurrest$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="2.1.3" rev-constraint-default="2.1.3" rev-constraint-dynamic="2.1.3" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-exceptions" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2135" time="0" location="/home/kahlua/dev/play-2.1/repository/local/play/play-exceptions/2.1.3/srcs/play-exceptions-sources.jar">
+						<origin-location is-local="true" location="/home/kahlua/dev/play-2.1/repository/local/play/play-exceptions/2.1.3/srcs/play-exceptions-sources.jar"/>
+					</artifact>
+					<artifact name="play-exceptions" type="jar" ext="jar" status="no" details="" size="4561" time="0" location="/home/kahlua/dev/play-2.1/repository/local/play/play-exceptions/2.1.3/jars/play-exceptions.jar">
+						<origin-location is-local="true" location="/home/kahlua/dev/play-2.1/repository/local/play/play-exceptions/2.1.3/jars/play-exceptions.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="play" name="sbt-link">
+			<revision name="2.1.3" status="release" pubdate="20130806152329" resolver="local" artresolver="local" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="1">
+				<metadata-artifact status="no" details="" size="1706" time="0" location="/home/kahlua/dev/play-2.1/framework/../repository/cache/play/sbt-link/ivy-2.1.3.xml" searched="false" origin-is-local="true" origin-location="/home/kahlua/dev/play-2.1/repository/local/play/sbt-link/2.1.3/ivys/ivy.xml"/>
+				<caller organisation="censeurrest" name="censeurrest$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="2.1.3" rev-constraint-default="2.1.3" rev-constraint-dynamic="2.1.3" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="sbt-link" type="jar" ext="jar" status="no" details="" size="8480" time="0" location="/home/kahlua/dev/play-2.1/repository/local/play/sbt-link/2.1.3/jars/sbt-link.jar">
+						<origin-location is-local="true" location="/home/kahlua/dev/play-2.1/repository/local/play/sbt-link/2.1.3/jars/sbt-link.jar"/>
+					</artifact>
+					<artifact name="sbt-link" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3959" time="0" location="/home/kahlua/dev/play-2.1/repository/local/play/sbt-link/2.1.3/srcs/sbt-link-sources.jar">
+						<origin-location is-local="true" location="/home/kahlua/dev/play-2.1/repository/local/play/sbt-link/2.1.3/srcs/sbt-link-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

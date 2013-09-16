@@ -9,3 +9,6 @@ project/project
 project/target
 .classpath
 .project
+target
+bin
+

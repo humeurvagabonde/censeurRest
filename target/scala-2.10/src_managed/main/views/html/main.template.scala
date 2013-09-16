@@ -13,10 +13,10 @@ import play.api.mvc._
 import play.api.data._
 import views.html._
 /**/
-object main extends BaseScalaTemplate[play.api.templates.Html,Format[play.api.templates.Html]](play.api.templates.HtmlFormat) with play.api.templates.Template2[String,Html,play.api.templates.Html] {
+object main extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template2[String,Html,play.api.templates.HtmlFormat.Appendable] {
 
     /**/
-    def apply/*1.2*/(title: String)(content: Html):play.api.templates.Html = {
+    def apply/*1.2*/(title: String)(content: Html):play.api.templates.HtmlFormat.Appendable = {
         _display_ {
 
 Seq[Any](format.raw/*1.32*/("""
@@ -37,19 +37,19 @@ Seq[Any](format.raw/*1.32*/("""
 """))}
     }
     
-    def render(title:String,content:Html): play.api.templates.Html = apply(title)(content)
+    def render(title:String,content:Html): play.api.templates.HtmlFormat.Appendable = apply(title)(content)
     
-    def f:((String) => (Html) => play.api.templates.Html) = (title) => (content) => apply(title)(content)
+    def f:((String) => (Html) => play.api.templates.HtmlFormat.Appendable) = (title) => (content) => apply(title)(content)
     
     def ref: this.type = this
 
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Sep 12 21:36:52 CEST 2013
-                    SOURCE: H:/Bureautique/dev/dev/gitRepositories/censeurRest/app/views/main.scala.html
-                    HASH: 5ffd16d1be911421a2b98ca612b58503fe812abd
-                    MATRIX: 509->1|616->31|710->90|736->95|834->158|848->164|903->198|1000->260|1014->266|1067->298|1129->324|1144->330|1211->375|1317->445|1346->452
+                    DATE: Sat Sep 14 11:47:08 CEST 2013
+                    SOURCE: /home/kahlua/dev/gitPoc/censeurRest/app/views/main.scala.html
+                    HASH: c98f5ae2f9ce07d5fd682f94f4cdd90b31fc141e
+                    MATRIX: 560->1|684->31|772->84|798->89|895->151|909->157|964->191|1060->252|1074->258|1127->290|1188->315|1203->321|1270->366|1373->433|1402->440
                     LINES: 19->1|22->1|28->7|28->7|29->8|29->8|29->8|30->9|30->9|30->9|31->10|31->10|31->10|34->13|34->13
                     -- GENERATED --
                 */

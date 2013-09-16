@@ -1,38 +1,25 @@
 package controllers
 
+import models._
+import models.current.dao._
+import models.current.dao.profile.simple._
 import play.api._
-import play.api.libs.json.Json
+import play.api.Play.current
+import play.api.data.Forms._
+import play.api.db.slick._
 import play.api.mvc._
-import play.api.libs.json.JsObject
-import play.api.libs.json.JsArray
-import play.api.libs.json.JsString
-import play.api.libs.json.JsNumber
-import play.api.libs.json.JsNull
 
 object Application extends Controller {
-  
-  def index = Action {
-    Ok(views.html.index("Your new application is ready."))
+    
+  def fiche = DBAction { implicit sessionRequest =>
+    //Individus.getTousLesTelephones foreach (println _)
+    //Individus.displayPrs250992
+    println(individusByName("64616").list)
+    Ok
   }
   
-  def test = Action {
-    Ok(JsArray(
-		    JsObject(
-		      "name" -> JsString("Bob") ::
-		      "age" -> JsNumber(31) ::
-		      "email" -> JsString("bob@gmail.com") ::
-		      Nil) ::
-		    JsObject(
-		      "name" -> JsString("Kiki") ::
-		      "age" -> JsNumber(25) ::
-		      "email" -> JsNull ::
-		      Nil
-		    ) :: Nil
-		))
+  def fiches = DBAction { implicit sessionRequest =>
+    Individus.displayAll
+    Ok("fiches")
   }
-  
-  def fiche = TODO
-  def fiches = TODO
-  
-  //def testAuth = Security.Authenticated(action) 
 }

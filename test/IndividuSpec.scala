@@ -1,14 +1,14 @@
-import models.{Individus, Individu}
+import models.current.dao._
 import java.sql.Timestamp
 import scala.slick.driver.H2Driver.simple._
 import org.scalatest.FlatSpec
 import org.scalatest.matchers.ShouldMatchers
 import java.util.Date
 import java.util.Calendar
-import models.Individus
 import Database.threadLocalSession
 import play.api.test._
 import play.api.test.Helpers._
+import models.Individu
 
 class IndividuSpec extends FlatSpec with ShouldMatchers {
 
@@ -18,7 +18,7 @@ class IndividuSpec extends FlatSpec with ShouldMatchers {
     	Individus.ddl.create
     	val fla = Individu(
     	    cCivilite = "M", 
-    	    dNaissance = new Timestamp(dateNaissance(24, 5, 1980).getTime()), 
+    	    dNaissance = Some(new Timestamp(dateNaissance(24, 5, 1980).getTime())), 
     	    nomAffichage = "LAGOUEYTE", 
     	    nomPatronymique = "Lagoueyte", 
     	    prenom = "François")
