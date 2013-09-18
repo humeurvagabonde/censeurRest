@@ -1,6 +1,8 @@
 package models
 
 import play.api.db.slick.Profile
+import play.api.libs.json._
+import play.api.libs.functional.syntax._
 import java.sql.Timestamp
 import java.util.Date
 import java.util.Calendar
@@ -20,55 +22,73 @@ case class Individu(
     indNoInsee: Option[String] = None, 
     noIndividu: Option[Int] = None, 
     nomAffichage: String, 
-    nomPatronymique: String, 
+    nomPatronymique: String,
+    nomUsuel: String, 
     prenom: String
 )
+
 
 trait IndividuComponent { this: Profile with PersonneTelephoneComponent =>
   
   	import profile.simple._
+  	
 	object Individus extends Table[Individu]("INDIVIDU_ULR") {
 	
 	  def id = column[Int]("PERS_ID", O.PrimaryKey, O.AutoInc)
 	  def cCivilite = column[String]("C_CIVILITE")
-	  def cDeptNaissance = column[String]("C_DEPT_NAISSANCE", O.Nullable)
-	  def cPaysNaissance = column[String]("C_PAYS_NAISSANCE", O.Nullable)
-	  def cPaysNationalite = column[String]("C_PAYS_NATIONALITE", O.Nullable)
+	  def cDeptNaissance = column[Option[String]]("C_DEPT_NAISSANCE")
+	  def cPaysNaissance = column[Option[String]]("C_PAYS_NAISSANCE")
+	  def cPaysNationalite = column[Option[String]]("C_PAYS_NATIONALITE")
 	  def dCreation = column[Timestamp]("D_CREATION")
-	  def dModification = column[Timestamp]("D_MODIFICATION", O.Nullable)
-	  def dNaissance = column[Timestamp]("D_NAISSANCE", O.Nullable)
-	  def dDeces = column[Timestamp]("D_DECES", O.Nullable)
-	  def indCSituationFamille = column[String]("IND_C_SITUATION_FAMILLE", O.Nullable)
-	  def indCleInsee = column[Int]("IND_CLE_INSEE", O.Nullable)
-	  def indNoInsee = column[String]("IND_NO_INSEE", O.Nullable)
-	  def noIndividu = column[Int]("NO_INDIVIDU", O.Nullable)
+	  def dModification = column[Option[Timestamp]]("D_MODIFICATION")
+	  def dNaissance = column[Option[Timestamp]]("D_NAISSANCE")
+	  def dDeces = column[Option[Timestamp]]("D_DECES")
+	  def indCSituationFamille = column[Option[String]]("IND_C_SITUATION_FAMILLE")
+	  def indCleInsee = column[Option[Int]]("IND_CLE_INSEE")
+	  def indNoInsee = column[Option[String]]("IND_NO_INSEE")
+	  def noIndividu = column[Option[Int]]("NO_INDIVIDU")
 	  def nomAffichage = column[String]("NOM_AFFICHAGE")
 	  def nomPatronymique = column[String]("NOM_PATRONYMIQUE")
+	  def nomUsuel = column[String]("NOM_USUEL")
 	  def prenom = column[String]("PRENOM")
 	  
-	  def * = (id.? ~ cCivilite ~ cDeptNaissance.? ~ cPaysNaissance.? ~ cPaysNationalite.? ~ dCreation
-	      ~ dModification.? ~ dNaissance.? ~ dDeces.? ~ indCSituationFamille.? ~ indCleInsee.? ~ indNoInsee.? 
-	      ~ noIndividu.? ~ nomAffichage ~ nomPatronymique ~ prenom) <> (Individu, Individu.unapply _)
-	  	      
-	  def displayAll(implicit session: Session) = {
-		  Query(Individus) foreach { case (id) =>
-		    println(id)
-		  }
-	  }
-	         
-	  def displayPrs250992(implicit session: Session) = {	
-		val telephones = for {
-			  individu <- Individus if individu.id === 933
-			  tel <- PersonneTelephones if individu.id === tel.persId
-		} yield (individu.nomAffichage, tel.numero)
-		println(telephones.selectStatement)
-		
-		println(telephones.list.mkString(", "))
-	  }
+	  def * = (id.? ~ cCivilite ~ cDeptNaissance ~ cPaysNaissance ~ cPaysNationalite ~ dCreation
+	      ~ dModification ~ dNaissance ~ dDeces ~ indCSituationFamille ~ indCleInsee ~ indNoInsee 
+	      ~ noIndividu ~ nomAffichage ~ nomPatronymique ~ nomUsuel ~ prenom) <> (Individu, Individu.unapply _)
 	  
-	  def getTousLesTelephones(implicit session: Session): List[PersonneTelephone] = (for {
-		  ind <- Individus
-		  tel <- PersonneTelephones if ind.id === tel.persId
-	  } yield ( tel )).list //or list ... 
+      def findByName(name: String)(implicit session: Session) = {
+	        val findBy = Query(Individus)
+	        val query = findBy.filter(_.nomUsuel like name)
+	        query.list
+      }
+	      
+      val byId = createFinderBy(_.id)
+	      
+	  /** METHODES DE TESTS */
+//	  def displayAll(implicit session: Session) = {
+//		  Query(Individus) foreach { case (id) =>
+//		    println(id)
+//		  }
+//	  }
+//	         
+//	  def displayPrs250992(implicit session: Session) = {	
+//		val telephones = for {
+//			  individu <- Individus if individu.id === 933
+//			  tel <- PersonneTelephones if individu.id === tel.persId
+//		} yield (individu.nomAffichage, tel.numero)
+//		println(telephones.selectStatement)
+//		
+//		println(telephones.list.mkString(", "))
+//	  }
+//	  
+//	  def getTousLesTelephones(implicit session: Session): List[PersonneTelephone] = (for {
+//		  ind <- Individus
+//		  tel <- PersonneTelephones if ind.id === tel.persId
+//	  } yield ( tel )).list
+//	  
+//	  def individusByName = for {
+//		  name <- Parameters[String]
+//		  ind <- Individus if ind.nomPatronymique like name
+//	  } yield ind    
   	}
 }
